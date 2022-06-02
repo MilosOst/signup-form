@@ -45,16 +45,17 @@
                         <input id="email" type="email" required>
                     </div>
                     <div class="input-box">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="tel" pattern="[0-9]{10}">
+                        <label for="phone-number">Phone Number (Optional)</label>
+                        <input id="phone-number" type="tel" pattern="[0-9]{10}">
                     </div>
                     <div class="input-box">
                         <label for="password1">Password</label>
-                        <input type="password" minlength="8" required>
+                        <input id="password1" type="password" minlength="8" required>
                     </div>
                     <div class="input-box">
                         <label for="password2">Confirm Password</label>
-                        <input type="password" minlength="8" required>
+                        <input id="password2" type="password" minlength="8" required>
+                        <p id="error-msg"></p>
                     </div>
                 </div>
                 <button class="btn" id="signup-btn" type="submit">Create Account</button>
@@ -64,5 +65,8 @@
             </div>
         </main>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

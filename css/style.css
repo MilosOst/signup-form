@@ -10,6 +10,7 @@
     justify-content: center;
     width: 100vw;
     min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .img-area {
@@ -128,6 +129,28 @@ a {
     background-color: rgb(235 235 235);
     min-height: 100px;
 
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 15px 0px #D8FFF5;;
+}
+
+input:focus:invalid {
+    border: 2px solid rgba(235, 20, 20, 0.911);
+}
+
+input:focus:valid {
+    border: 2px solid rgba(16, 191, 204, 0.7);
+}
+
+input::selection {
+    background-color: rgb(241, 106, 16)
+}
+
+#error-msg {
+    color: red;
 }
 
 @media only screen and (max-width: 700px) {
